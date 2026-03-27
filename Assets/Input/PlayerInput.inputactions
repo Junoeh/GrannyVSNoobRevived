@@ -3,7 +3,7 @@
     "name": "PlayerInput",
     "maps": [
         {
-            "name": "Gameplay",
+            "name": "Player",
             "id": "2e56d19b-1b90-477d-8790-99b3e573caa4",
             "actions": [
                 {
@@ -19,6 +19,24 @@
                     "name": "Jump",
                     "type": "Button",
                     "id": "67d2c76e-6b21-4f23-9a57-3d970732864b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "f8008088-7402-41e3-856c-08d727e27497",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "e9cecd66-d0f1-416b-a58b-efc42afa7416",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -89,6 +107,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45611687-50cf-4000-ad52-88a095c4d8fb",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65a66ed3-4527-4a15-a65f-e0e85436c4bd",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
